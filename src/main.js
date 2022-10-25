@@ -74,3 +74,13 @@ const securityCodePattern = {
   mask: "0000",
 }
 const securityCodeMasked = IMask(securityCode, securityCodePattern)
+
+
+const addButton = document.querySelector("#add-card")
+addButton.addEventListener("click", () => {
+  alert('cartão adicionado!')
+})
+
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
